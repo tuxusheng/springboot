@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+hahahah
+<!--th:text转义字符-->
+<div th:text="${user}">这是显示欢迎信息</div>
+
+<!--输出对象-->
+<div th:text="${user2.username}+${user2.password}"></div>
+
+<div th:utext="${s1}"></div>
+<div th:text="${s1}"/>
+
+</body>
+</html>

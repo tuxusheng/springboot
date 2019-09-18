@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr th:each="sysEmployee:${list}">
+    <td th:text="${sysEmployee.name}"></td>
+    <td th:text="${sysEmployee.password}"></td>
+    <td th:text="${sysEmployee.positionId}"></td>
+    </tr>
+</table>
+</body>
+</html>
